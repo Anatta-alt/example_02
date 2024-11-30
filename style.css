@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap');
+ 
+*{
+    box-sizing: border-box;
+}
+
+.card::before{
+    /* icon */
+    font-family: "Font Awesome 6 Free";
+    content: '\f057';
+}
+.card::after{
+    content: '9';
+}
+.card{
+    margin: 100px auto;
+    width: 200px;
+    height: 260px;
+    border: 1px solid black;
+    border-radius: 8px;
+    position: relative;
+}
+
+.card img{
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+.card::before , .card::after{
+    position: absolute;
+    font-size: 1.3rem;
+}
+
+.card::before{
+    top: 4px;
+    left: 4px;
+    color: red;
+    text-shadow: 2px 2px 24px silver;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.card::after{
+    top: -8px;
+    right: -10px;
+    background-color:red;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    color: whitesmoke;
+}
+
+.card h4{
+    display: flex;
+    justify-content: center;
+    font-weight: 200;
+    font-size: 30px;
+    margin: 0;
+    margin-top: 0.5rem;
+    text-decoration-line: overline;
+    letter-spacing: 0.1rem;
+    text-shadow: 2px 2px 1px black;
+}
